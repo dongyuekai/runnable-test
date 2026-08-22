@@ -7,7 +7,7 @@ import { ChatPromptTemplate, MessagesPlaceholder } from '@langchain/core/prompts
 import { RunnableSequence, RunnableLambda, RunnableBranch, RunnablePassthrough } from '@langchain/core/runnables';
 
 const model = new ChatOpenAI({
-  modelName: "qwen-max",
+  modelName: "qwen3.7-plus",
   apiKey: process.env.OPENAI_API_KEY,
   configuration: {
     baseURL: process.env.OPENAI_BASE_URL,
